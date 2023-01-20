@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <link rel="stylesheet" href="CSS Style/Style.css" type="text/css" >
+        <link rel="stylesheet" href="css/all.css" >    
+
+       <title>DK LEARNINGS</title>
+       
+    <style>
+        body {  background-image: url("images/Wallpaper1.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%; }   
+
+  
+    
+    </style>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1">
+    
+    
+</head>
+        
+<body>
+    <div class="header">
+        <h1>DK Learnings</h1>
+      </div>
+      <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="Our Courses & Staff.html">Our Courses & Staff</a>
+        <a class="active" href="Gallery.html">Gallery</a>
+        <a href="Login.html">Login</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="full-img"id="fullImgBox">
+          <img src="images/gallery1.jpg" id="fullImg">
+          <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+          <img src="images/gallery1.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery2.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery3.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery4.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery5.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery6.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery7.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery8.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery9.jpg" onclick="openFullImg(this.src)">
+	  <img src="images/gallery10.jpg" onclick="openFullImg(this.src)">
+          <img src="images/gallery11.jpeg" onclick="openFullImg(this.src)">
+          <img src="images/gallery12.jpg" onclick="openFullImg(this.src)">
+
+
+        </div>
+
+        <script>
+
+          var fullImgBox = document.getElementById("fullImgBox");
+          var fullImg = document.getElementById("fullImg");
+
+          function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+          }
+
+          function closeFullImg(){
+            fullImgBox.style.display = "none";
+
+          }
+
+        </script>
+       
+            
+       
+
+       
+
+       <footer>
+        <div class="footer-content">
+          <a href="Home.html"> <p1>DK LEARNINGS</p1></a>
+          </div>
+      
+
+          <div class="social-items">
+         
+            <li> <a href="https://www.facebook.com/shalike.dananjaya.7"target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li> <a href="mailto:is2018174@mgt.rjt.ac.lk"target="_blank"><i class="fab fa-google"></i></a></li> 
+            <li> <a href="https://twitter.com/ShalikeD?t=E87FqsrXx-vvhwlGte-z3w&s=9"target="_blank"><i class="fab fa-twitter"></i> </a></li>
+         
+        </div>
+        
+
+        <div class="sign">
+          <a href="Login.html">Sign</a> 
+        </div>
+
+
+       
+
+        <div class="outerfooter">
+          Copyright &copy ; DK Learnings. All Rights Reserved.
+        </div>
+
+        <div class="footer-bottom">
+          <p><a href="#top">Top</a></p> 
+          </div>   
+
+      
+      
+      </footer>
+      
+      
+       
+       
+       
+
+
+</body>
+</html>

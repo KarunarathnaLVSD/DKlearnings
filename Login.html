@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html> 
+<head>
+        <link rel="stylesheet" href="CSS Style/Style.css" type="text/css" >
+        <link rel="stylesheet" href="css/all.css" >    
+
+       <title>DK LEARNINGS</title>
+       
+    <style>
+        body {  background-image: url("images/Wallpaper4.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed; 
+                background-size: 100% 100%; }   
+
+  
+    
+    </style>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1">
+    
+    
+</head>
+        
+<body>
+    <div class="header">
+        <h1>DK Learnings</h1>
+      </div>
+      <div class="topnav">
+        <a href="Home.html">Home</a>
+        <a href="Our Courses & Staff.html">Our Courses & Staff</a>
+        <a href="Gallery.html">Gallery</a>
+        <a class="active" href="Login.html">Login</a>
+        <a href="Contact Us.html">Contact Us</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        
+
+
+ <div class="container1">
+          <div class="card1">
+            <div class="inner-box" id="card1">
+              <div class="card-front">
+                <h1>LOGIN</h1>
+                <form>
+                    <input type="email" class="input-box" placeholder="Your Email ID" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"> <span>Remember Me</span>
+                </form>
+                <button type="button" class="btn" onclick="openRegister()">Create a new account</button>
+                <a href="">Forgot Password</a>
+              </div>
+                <div class="card-back">
+                  <h1>Register</h1>
+                <form>
+                    <input type="text" class="input-box" placeholder="Your Name" required>
+                    <input type="email" class="input-box" placeholder="Your Email ID" required>
+                    <input type="password" class="input-box" placeholder="Password" required>
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <input type="checkbox"> <span>Remember Me</span>
+                </form>
+                <button type="button" class="btn" onclick="openLogin()">I have an account</button>
+                <a href="">Forgot Password</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <script>
+          
+          var card1 = document.getElementById("card1");
+          
+          function openRegister(){
+            card1.style.transform = "rotatey(-180deg)";
+          }
+          function openLogin(){
+            card1.style.transform = "rotatey(0deg)";
+          }
+
+        </script>
+
+        <div class="Next-Step">
+          <a href="Contact Us.html">
+            <button class="btn Next Step">Next Step</button> </a>
+        </div>
+
+       <footer>
+          <div class="footer-content">
+            <a href="Home.html"> <p1>DK LEARNINGS</p1></a>          
+          </div>
+        
+
+            <div class="social-items">
+           
+              <li> <a href="https://www.facebook.com/shalike.dananjaya.7"target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li> <a href="mailto:is2018174@mgt.rjt.ac.lk"target="_blank"><i class="fab fa-google"></i></a></li> 
+              <li> <a href="https://twitter.com/ShalikeD?t=E87FqsrXx-vvhwlGte-z3w&s=9"target="_blank"><i class="fab fa-twitter"></i> </a></li>
+           
+          </div>
+          
+
+         
+          <div class="sign">
+            <button type="button" class="btn" 
+            onclick="openLogin()">Sign In</button>
+            <button type="button" class="btn"
+             onclick="openRegister()">Sign Up</button>
+          </div>
+
+
+         
+
+          <div class="outerfooter">
+            Copyright &copy ; DK Learnings. All Rights Reserved.
+          </div>
+
+          <div class="footer-bottom">
+            <p><a href="#top">Top</a></p> 
+            </div>
+     
+
+        
+        
+        </footer>  
+
+        
+       
+
+      
+      
+       
+       
+       
+
+
+</body>
+</html>
